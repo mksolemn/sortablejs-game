@@ -1,3 +1,7 @@
+Main files:
+/js/main.js;
+index.html;
+
 Drag and drop game built using rubaxa/sortablejs
 
 Drag items from two columns on the left and place then in the box on the right.
