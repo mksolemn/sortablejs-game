@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Draggable</title>
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/vendor/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body cz-shortcut-listen="true">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 game-cards">
+        <div class="row game-wrapper">
+          <div class="col-sm-12">
+            <h2 class="title">Drag and drop elements</h2>
+          </div>
+          <div class="col-sm-6">
+
+            <div id="cardcol1" class="card-group selection">
+
+              <div class="list-group-item" data-title="Armenia"><span class="position"></span><span class="position"></span><span class="tittle">Armenia</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+              <div class="list-group-item" data-title="Australia"><span class="position"></span><span class="tittle">Australia</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+              <div class="list-group-item" data-title="Austria"><span class="position"></span><span class="tittle">Austria</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+              <div class="list-group-item" data-title="Azerbaijan"><span class="position"></span><span class="tittle">Azerbaijan</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+              <div class="list-group-item" data-title="Belgium"><span class="position"></span><span class="tittle">Belgium</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+              <div class="list-group-item" data-title="Bulgaria"><span class="position"></span><span class="tittle">Bulgaria</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+              <div class="list-group-item" data-title="Croatia"><span class="position"></span><span class="tittle">Croatia</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+              <div class="list-group-item" data-title="Cyprus"><span class="position"></span><span class="tittle">Cyprus</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+              <div class="list-group-item" data-title="Czech"><span class="position"></span><span class="tittle">Czech</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+              <div class="list-group-item" data-title="France"><span class="position"></span><span class="tittle">France</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+              <div class="list-group-item" data-title="Georgia"><span class="position"></span><span class="tittle">Georgia</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+              <div class="list-group-item" data-title="Germany"><span class="position"></span><span class="tittle">Germany</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+              <div class="list-group-item" data-title="Hungary"><span class="position"></span><span class="tittle">Hungary</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+
+            </div>
+
+          </div>
+          <div class="col-sm-6">
+
+            <div id="cardcol2" class="card-group selection">
+
+              <div class="list-group-item" data-title="Israel"><span class="position"></span><span class="tittle">Israel</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+              <div class="list-group-item" data-title="Italy"><span class="position"></span><span class="tittle">Italy</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+              <div class="list-group-item" data-title="Latvia"><span class="position"></span><span class="tittle">Latvia</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+              <div class="list-group-item" data-title="Lithuania"><span class="position"></span><span class="tittle">Lithuania</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+              <div class="list-group-item" data-title="Malta"><span class="position"></span><span class="tittle">Malta</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+              <div class="list-group-item" data-title="Netherlands"><span class="position"></span><span class="tittle">Netherlands</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+              <div class="list-group-item" data-title="Poland"><span class="position"></span><span class="tittle">Poland</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+              <div class="list-group-item" data-title="Russia"><span class="position"></span><span class="tittle">Russia</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+              <div class="list-group-item" data-title="Serbia"><span class="position"></span><span class="tittle">Serbia</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+              <div class="list-group-item" data-title="Spain"><span class="position"></span><span class="tittle">Spain</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+              <div class="list-group-item" data-title="Sweden"><span class="position"></span><span class="tittle">Sweden</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+              <div class="list-group-item" data-title="Ukraine"><span class="position"></span><span class="tittle">Ukraine</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+              <div class="list-group-item" data-title="United Kingdom"><span class="position"></span><span class="tittle">United Kingdom</span><span class="flag"></span><span class="remove-ico glyphicon glyphicon-remove"></span></div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- /.game-cards -->
+      <div class="col-sm-3 col-sm-offset-1 game-lineup">
+        <h2 class="title">Select top 10</h2>
+        <div id="lineup" class="card-group lineup well"></div>
+      </div>
+      <!-- /.game-lineup -->
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <footer class="blog-footer">
+
+  </footer>
+
+  <script src="minjs/vendor/jquery-3.1.1.min.js"></script>
+  <script src="minjs/vendor/bootstrap.min.js"></script>
+  <script src="http://rubaxa.github.io/Sortable/Sortable.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

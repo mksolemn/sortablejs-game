@@ -1,0 +1,46 @@
+// sizing
+$items-per-row: 50%; //2
+$item-height: 50px;
+$spacing: 2px 5px; // item spacing
+#sort-scontainer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    >div {
+        padding: $spacing;
+        float: left;
+        width: $items-per-row;
+        height: 90px;
+        font-size: 4em;
+        text-align: center;
+    }
+}
+
+.card-group {
+    &.lineup {
+        min-height: 100px;
+        .list-group-item {
+            position: relative;
+            overflow: hidden;
+            &:hover {
+                >.remove-ico {
+                    visibility: visible;
+                    opacity: 1;
+                    color:#7f8c8d;
+                }
+            }
+        }
+    }
+}
+
+.remove-ico {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+}
